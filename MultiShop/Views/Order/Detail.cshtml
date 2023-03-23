@@ -1,0 +1,81 @@
+﻿@model Order
+
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Order Information</h2>
+
+<div class="form-horizontal">
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Customer Name</label>
+        <div class="col-md-10">
+            @Model.Customer.Fullname
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Order Date</label>
+        <div class="col-md-10">
+            @Html.FormatValue(Model.OrderDate, "{0:yyyy-MM-dd}")
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Required Date</label>
+        <div class="col-md-10">
+            @Html.FormatValue(Model.RequireDate, "{0:yyyy-MM-dd}")
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Receiver Name</label>
+        <div class="col-md-10">
+            @Model.Receiver
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Email Address</label>
+        <div class="col-md-10">
+            @Model.Address
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Total Amount</label>
+        <div class="col-md-10">
+            @Html.FormatValue(Model.Amount, "{0:c}"))
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Description</label>
+        <div class="col-md-10">
+            @Model.Description
+        </div>
+    </div>
+</div>
+
+<h2>Order Details</h2>
+<table class="table table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Unit Price</th>
+        <th>Discount</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+    </tr>
+    @foreach (var d in Model.OrderDetails) { 
+    <tr>
+        <td>@d.ProductId</td>
+        <td>@d.Product.Name</td>
+        <td>@d.UnitPrice</td>
+        <td>@d.Discount</td>
+        <td>@d.Quantity</td>
+        <td>@(d.UnitPrice * d.Quantity * (1 - d.Discount))</td>
+    </tr>
+    }
+</table>

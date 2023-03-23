@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<fieldset>
+    <legend>Role Management</legend>
+    @using (Html.BeginForm()){
+        @Html.DropDownList("OldRoleName")
+        <input type="submit" value="Remove" onclick="form.action = '/Admin/Master/RemoveRole'" />
+        
+        @Html.TextBox("NewRoleName")
+        <input type="submit" value="Add" onclick="form.action = '/Admin/Master/AddRole'" />
+    }
+</fieldset>
+<hr />
+
+<fieldset>
+    <legend>User Management</legend>
+    @using (Html.BeginForm())
+    {
+        <div>User Name</div>
+        @Html.TextBox("UserName")
+        
+        <div>Password</div>
+        @Html.TextBox("Password")
+        
+        <div>Roles</div>
+        foreach(var r in ViewBag.Roles){
+            <label>
+                <input type="checkbox" name="Roles" value="@r.Name" />
+                @r.Name
+            </label>
+        }
+        <hr />
+        <input type="submit" value="Add" onclick="form.action = '/Admin/Master/AddUser'" />
+    }
+    <hr />
+    <table class="table table-bordered">
+        <tr>
+            <th>User Name</th>
+            <th>Roles</th>
+            <th></th>
+        </tr>
+        @foreach (MultiShop.Models.ApplicationUser u in ViewBag.Users)
+        {
+            var roleIds = u.Roles.Select(ur => ur.RoleId).ToList();
+            <tr>
+                <td>@u.UserName</td>
+                <td>
+                    @foreach(var r in ViewBag.Roles){
+                        var check = roleIds.Contains(r.Id) ? "checked" : "";
+                    <label>
+                        <input @check type="checkbox" name="Roles" 
+                               value="@r.Name" data-userid="@u.UserName" />
+                        @r.Name
+                    </label>
+                    }
+                </td>
+                <td>
+                    <a href="/Admin/Master/RemoveUser?UserName=@u.UserName">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+</fieldset>
+
+@section scripts{
+<script>
+    $(function () {
+        $(":checkbox[name=Roles]").click(function () {
+            var roleName = $(this).val();
+            var status = $(this).prop("checked");
+            var userName = $(this).attr("data-userid");
+            $.ajax({
+                url: "/Admin/Master/UpdateRole",
+                data: { Name: roleName, Status: status, UserName: userName },
+                success: function (response) {
+                    alert(response);
+                }
+            });
+        });
+    });
+    </script>
+}

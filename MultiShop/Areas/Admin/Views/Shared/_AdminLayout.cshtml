@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/Admin/Home/Index" class="navbar-brand">Trang chủ</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                @Html.Partial("_Menu")
+            </div>
+        </div>
+
+        <div class="nn-sheet">
+            <div class="row">
+                <article class="col-md-12">
+                    <div class="nn-body">@RenderBody()</div>
+                </article>
+            </div>
+            <hr />
+            <div class="row">
+                <footer style="text-align:center">
+                    <p>&copy; @DateTime.Now.ToString("MMMM 2014") by MultiShop</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <link href="~/CartEffect/jquery-ui.css" rel="stylesheet" />
+    <script src="~/CartEffect/jquery-ui.js"></script>
+    @RenderSection("scripts", required: false)
+
+    <script>
+        $(function () {
+            $("#search").autocomplete({
+                source: "/Home/Search",
+                minLength:2
+            });
+        })
+    </script>
+</body>
+</html>

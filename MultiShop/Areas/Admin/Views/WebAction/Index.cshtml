@@ -1,0 +1,73 @@
+﻿@model MultiShop.Models.WebAction
+@{
+    ViewBag.Title = "Quản lý action";
+}
+
+<h2>Quản lý action</h2>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#edit-tab" role="tab" data-toggle="tab">Edit</a></li>
+    <li><a href="#list-tab" role="tab" data-toggle="tab">List</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="edit-tab">
+        @using (Html.BeginForm("Index", "WebAction",
+            FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.ValidationSummary()
+
+            @Html.HiddenFor(m => m.Id)
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Controller, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.Controller, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-4 col-md-8">
+                    <button onclick="form.action = '/Admin/WebAction/Insert'" class="btn btn-default">Insert</button>
+                    <button onclick="form.action = '/Admin/WebAction/Update'" class="btn btn-default">Update</button>
+                    <button onclick="form.action = '/Admin/WebAction/Delete'" class="btn btn-default">Delete</button>
+                    <button onclick="form.action = '/Admin/WebAction/Index'" class="btn btn-default">Reset</button>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="tab-pane" id="list-tab">
+        <table class="table table-bordered">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Controller</th>
+                <th></th>
+                <th></th>
+            </tr>
+            @foreach (MultiShop.Models.WebAction c in ViewBag.WebActions)
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.Name</td>
+                    <td>@c.Controller</td>
+                    <td>
+                        <a href="/Admin/WebAction/Delete/@c.Id">Xóa</a>
+                    </td>
+                    <td>
+                        <a href="/Admin/WebAction/Edit/@c.Id">Sửa</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

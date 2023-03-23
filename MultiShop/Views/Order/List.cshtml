@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Order>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Order List</h2>
+
+<table class="table table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Reciever</th>
+        <th>Order Date</th>
+        <th>Amount</th>
+        <th></th>
+    </tr>
+    @foreach (var o in Model)
+    {
+        <tr>
+            <td>@o.Id</td>
+            <td>@o.Receiver</td>
+            <td>@o.OrderDate</td>
+            <td>@o.Amount</td>
+            <td>
+                <a href="/Order/Detail/@o.Id">Detail</a>
+            </td>
+        </tr>
+    }
+</table>

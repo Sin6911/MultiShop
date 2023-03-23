@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<fieldset>
+    <legend>Permission</legend>
+
+    @using (Html.BeginForm())
+    {
+        @:Role: 
+        @Html.DropDownList("RoleName")
+        
+        @:Controller:
+        @Html.DropDownList("ControllerName")
+
+        <hr />
+        foreach (var p in ViewBag.Permissions)
+        {
+            <label style="display:block">
+                <input type="checkbox" value="@p.Id" @(p.Allowable?"checked":"") />
+                @p.Action.Name
+            </label>
+        }
+    }
+</fieldset>
+
+@section scripts{
+    <script>
+        $(function () {
+            $("select").change(function () {
+                $(this).get(0).form.submit();
+            });
+
+            $(":checkbox").click(function () {
+                pid = $(this).val();
+                status = $(this).prop("checked");
+
+                $.ajax({
+                    url: "/Admin/Permission/Update",
+                    data: { Id: pid, Allowable: status },
+                    success: function (response) {
+                        window.status = response;
+                    }
+                });
+            });
+        });
+    </script>
+}

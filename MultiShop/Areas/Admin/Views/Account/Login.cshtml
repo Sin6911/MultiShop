@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Administration Login</h2>
+
+@using (Html.BeginForm()){
+    <div>User Name</div>
+    @Html.TextBox("UserName")
+    
+    <div>Password</div>
+    @Html.TextBox("Password")
+
+    <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+    <input type="submit" value="Login" />
+}

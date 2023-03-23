@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewBag.Title = "Shopping Cart ";
+}
+
+<h2>Shopping Cart</h2>
+<table class="table table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Unit Price</th>
+        <th>Discount</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+        <th></th>
+    </tr>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Name</td>
+            <td>@Html.FormatValue(p.UnitPrice, "{0:c}")</td>
+            <td>@Html.FormatValue(p.Discount, "{0:p}")</td>
+            <td><input class="quantity" value="@p.Quantity" data-id="@p.Id" size="3"></td>
+            <td id="@p.Id">@Html.FormatValue(p.UnitPrice * p.Quantity * (1 - p.Discount), "{0:c}")</td>
+            <td>
+                <img class="remove-from-cart" data-id="@p.Id" src="~/img/icons/Trash.png" />
+            </td>
+        </tr>
+    }
+    <tr>
+        <th colspan="5" style="text-align:right">Total:</th>
+        <th>@ShoppingCart.Cart.Total</th>
+        <th></th>
+    </tr>
+</table>
+<form action="/Cart/Clear" method="post">
+    <button class="btn btn-default">
+        <span class="glyphicon glyphicon-th-list"></span>
+        Clear Cart
+    </button>
+    <a href="/Product/List" class="btn btn-default">
+        <span class="glyphicon glyphicon-th-list"></span>
+        Shopping More
+    </a>
+    <a href="/Order/Checkout" class="btn btn-default">
+        <span class="glyphicon glyphicon-th-list"></span>
+        Checkout
+    </a>
+</form>
+
+@section scripts{
+    <script>
+        $(function () {
+            // Xóa khỏi giỏ
+            $(".remove-from-cart").click(function () {
+                pid = $(this).attr("data-id");
+                tr = $(this).parents("tr");// tim <tr> chua <img> bi click
+                $.ajax({
+                    url: "/Cart/Remove",
+                    data: { id: pid },
+                    success: function (response) {
+                        $("#nn-cart-count").html(response.Count);
+                        $("#nn-cart-total").html(response.Total);
+                        tr.hide(500);
+                    }
+                });
+            });
+            // Cập nhật số lượng
+            $(".quantity").keyup(function () {
+                pid = $(this).attr("data-id");
+                qty = $(this).val();
+                $.ajax({
+                    url: "/Cart/Update",
+                    data: { id: pid, quantity: qty },
+                    success: function (response) {
+                        $("#nn-cart-count").html(response.Count);
+                        $("#nn-cart-total").html(response.Total);
+                        $("#" + pid).html("$" + response.Amount);
+                    }
+                });
+            });
+        });
+    </script>
+}

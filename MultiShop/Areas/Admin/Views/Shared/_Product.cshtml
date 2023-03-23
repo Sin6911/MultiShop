@@ -1,0 +1,31 @@
+﻿<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>UnitPrice</th>
+        <th>UnitBrief</th>
+        <th>Quantity</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (Product c in ViewBag.Products)
+    {
+        <tr>
+            <td>@c.Id</td>
+            <td>@c.Name</td>
+            <td>@c.UnitPrice</td>
+            <td>@c.UnitBrief</td>
+            <td>@c.Quantity</td>
+            <td>
+                <a href="/Admin/Product/Delete/@c.Id">
+                    <img src="/Content/img/icons/Task%20list.png" />
+                </a>
+            </td>
+            <td>
+                <a href="/Admin/Product/Edit/@c.Id">
+                    <img src="/Content/img/icons/Edit.png" width="24" height="24" />
+                </a>
+            </td>
+        </tr>
+    }
+</table>

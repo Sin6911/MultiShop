@@ -1,0 +1,110 @@
+﻿@model Order
+
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Checkout</h2>
+
+@using (Html.BeginForm("Purchase", "Order")) 
+{
+    <div class="form-horizontal">
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Customer Name</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.CustomerId, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Order Date</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OrderDate, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Required Date</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.RequireDate, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Receiver Name</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Receiver, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Email Address</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Total Amount</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Amount, new { @class = "form-control",@readonly="true" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Bank Account</label>
+            <div class="col-md-10">
+                @Html.TextBox("BankAccount", null, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Description</label>
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, new { @class = "form-control", rows="5" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Purchase" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<h2>The Selected Items</h2>
+<table class="table table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Unit Price</th>
+        <th>Discount</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>Nokia</td>
+        <td>$100</td>
+        <td>5%</td>
+        <td>2</td>
+        <td>$190</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>Nokia</td>
+        <td>$100</td>
+        <td>5%</td>
+        <td>2</td>
+        <td>$190</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>Nokia</td>
+        <td>$100</td>
+        <td>5%</td>
+        <td>2</td>
+        <td>$190</td>
+    </tr>
+</table>

@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Kiểm kê hàng hóa theo loại</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Loại</th>
+        <th>Số lượng</th>
+        <th>Tổng giá trị</th>
+        <th>Giá trung bình</th>
+        <th>Giá cao nhất</th>
+        <th>Giá thấp nhất</th>
+    </tr>
+    @foreach (ReportInfo r in ViewBag.Reports)
+    {
+        <tr>
+            <td>@r.Group</td>
+            <td>@r.Count</td>
+            <td>@r.Sum</td>
+            <td>@r.Avg</td>
+            <td>@r.Max</td>
+            <td>@r.Min</td>
+        </tr>
+    }
+</table>

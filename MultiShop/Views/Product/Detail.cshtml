@@ -1,0 +1,440 @@
+﻿@model Product
+@{
+    ViewBag.Title = Model.Category.Name + " | " + Model.Name;
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+}
+
+<div class="row">
+    <div class="nn-product-view">
+        <div class="nn-product-essential row col-md-9 nn-margin-bottom">
+            <div class="row nn-margin-bottom ">
+                <div class="nn-product-image-box col-sm-6">
+                    <div class="nn-product-image-box-main  ">
+                        <img class="img-responsive" src="/Content/img/products/@Model.Image" />
+
+                    </div>
+
+
+                </div>
+
+                <div class="nn-product-shop col-sm-6">
+
+                    <div class="product-name">
+                        <h1>@Model.Name</h1>
+                    </div>
+                    <span class="sku_wrapper">
+                        <span class="item-title">Product Code:</span>
+                        <span>
+                            <strong>
+                                @Model.Name - @Model.Id
+                            </strong>
+                        </span>
+                    </span>
+                    <span><br /></span>
+                    <span class="category-url-wrapper">
+                        <span class="item-title">Category: </span>
+                        <a href="/Product/Category?CategoryID=@Model.CategoryId">@Model.Category.Name </a>
+                    </span>
+                    <p class="no-rating"><a href="#comments" onclick="gotoAddReviews()">Be the first to comments this product</a></p>
+
+                    <div class="short-description">
+                        <div class="std">
+                            <h5>
+
+                                <strong></strong>
+
+                            </h5><br>
+
+                        </div>
+                    </div>
+
+                    <p class="availability in-stock">
+                        <span class="item-title">
+                            <i>Availability: </i>
+                        </span>
+                        <span>
+                            <strong>
+                                @Model.Quantity
+                            </strong>
+                        </span>
+                        In stock
+                    </p>
+                    <div class="price-box">
+
+                        <h3>@Model.UnitPrice</h3>
+
+
+                    </div>
+                    <div class="add-to-box">
+                        <div class="add-to-cart nn-margin-bottom">
+                            <div class="qty-box">
+                                <label for="qty">Qty:</label>
+                                <input type="text" style="width:50px" class="form-control" name="qty" id="qty" maxlength="12" value="1" title="Qty">
+
+                            </div>
+                        </div>
+
+                        <button type="button" title="Add to Cart" class="btn btn-default add-to-cart" data-id="@Model.Id">
+                            <span>Add to Cart</span>
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                        <a href="#descriptions" role="tab" data-toggle="tab">
+                            Descriptions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#specifications" role="tab" data-toggle="tab">
+                            Specifications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#comments" role="tab" data-toggle="tab">
+                            <i class="fa fa-envelope"></i> Comments
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="descriptions">
+                        <h2>Descriptions</h2>
+                        <div>
+                            @Model.Description
+                        </div>
+                    </div>
+                    <div class="tab-pane fade row" id="specifications">
+
+
+                        <h2>Chi tiết sản phẩm</h2>
+
+
+                        <div class="col-md-6">
+                            <table class="table table-hover table-striped">
+                                <tr>
+                                    <td>
+                                        ProductCode:
+                                    </td>
+                                    <td>
+                                        @Model.Name - @Model.Id
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Name
+                                    </td>
+                                    <td>
+                                        @Model.Name
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Available
+                                    </td>
+                                    <td>
+                                        @Model.Available
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Category
+                                    </td>
+                                    <td>
+                                        @Model.Category.Name
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Discount
+                                    </td>
+                                    <td>
+                                        @Model.Discount
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        ProductDate
+                                    </td>
+                                    <td>
+                                        @Model.ProductDate
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Supplier
+                                    </td>
+                                    <td>
+                                        @Model.Supplier.Name
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        UnitBrief
+                                    </td>
+                                    <td>
+                                        @Model.UnitBrief
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Views
+                                    </td>
+                                    <td>
+                                        @Model.Views
+                                    </td>
+                                </tr>
+
+
+                            </table>
+                        </div>
+                        <div class="col-md-6"></div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="comments">
+                        <h2>Your comments, Our treasure</h2>
+                        <div class="fb-comments" data-href="/chi-tiet/@Model.Name.ToAscii().ToLower()_@Model.Id" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nn-product-view-right col-sm-3 nn-margin-bottom">
+            <aside>
+                <h3>BRAND</h3>
+                <div>
+
+
+
+
+                </div>
+            </aside>
+            <aside>
+                <h3>OUR OFFERS</h3>
+                <div id="demo5" class="scroll-img">
+                    <ul>
+                        @foreach (var s in Model.Supplier.Products.OrderBy(p=>Guid.NewGuid()).Skip(1).Take(10))
+                   {
+
+                            <li>
+                                <div class="row">
+
+                                    <div class="nn-product-box">
+                                        <a href="/chi-tiet/@s.Name.ToAscii().ToLower()_@s.Id">
+
+                                            <img class="img-responsive" title="@s.Name" src="/Content/img/products/@s.Image" alt="@Model.Name" />
+                                        </a>
+                                        <div class="nn-product-box-descriptions">
+                                            <h3 class="nn-product-box-name">
+                                                <a href="/chi-tiet/@s.Name.ToAscii().ToLower()_@s.Id" title="@s.Name">@s.Name</a>
+                                            </h3>
+                                            <div class="nn-product-box-price ">
+                                                <span class="">@s.UnitPrice</span>
+                                            </div>
+                                            <div class="nn-product-box-actions">
+                                                <button type="button" title="Add to Cart" class="btn btn-default add-to-cart" data-id="@s.Id">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div><!--end nn-product-box-->
+                                </div>
+                            </li>
+                       }
+                    </ul>
+                </div>
+                <div id="demo5-btn" class="text-center">
+                    <button class="btn" id="demo5-backward"><i class="icon-chevron-left"></i> Backward</button>
+                    <button class="btn" id="demo5-forward">Forward <i class="icon-chevron-right"></i></button>
+                </div>
+            </aside>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="container">
+        <fieldset class="nn-relate">
+            <legend>Same Category</legend>
+            @foreach (var p in Model.Supplier.Products.Skip(1).Take(7))
+            {
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="nn-product-box">
+                        <a href="/chi-tiet/@p.Name.ToAscii().ToLower()_@p.Id">
+                            <img class="img-responsive" src="/Content/img/products/@p.Image" />
+                        </a>
+                        <div class="nn-product-box-descriptions">
+                            <h3 class="nn-product-box-name">
+                                <a href="/chi-tiet/@p.Name.ToAscii().ToLower()_@p.Id" title="@p.Name">@p.Name</a>
+                            </h3>
+                            <div class="nn-product-box-price ">
+                                <span class=""> @p.UnitPrice</span>
+                            </div>
+                            <div class="nn-product-box-actions">
+                                <button type="button" title="Add to Cart" class="btn btn-default add-to-cart" data-id="@p.Id">
+                                    <span>Add to Cart</span>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </fieldset>
+    </div>
+    <div class="container">
+        <fieldset class="nn-relate">
+            <legend>Viewed Product </legend>
+            @foreach (var p in ViewBag.Views)
+            {
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="nn-product-box">
+                    <a href="/chi-tiet/@p.Name.ToLower()_@p.Id">
+                        <img class="img-responsive" src="/Content/img/products/@p.Image" />
+                    </a>
+                    <div class="nn-product-box-descriptions">
+                        <h3 class="nn-product-box-name">
+                            <a href="/chi-tiet/@p.Name.ToLower()_@p.Id" title="@p.Name">@p.Name</a>
+                        </h3>
+                        <div class="nn-product-box-price ">
+                            <span class=""> @p.UnitPrice</span>
+                        </div>
+                        <div class="nn-product-box-actions">
+                            <button type="button" title="Add to Cart" class="btn btn-default add-to-cart" data-id="@p.Id">
+                                <span>Add to Cart</span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </fieldset>
+    </div>
+</div>
+<style>
+    /* Tab Navigation */
+    .nav-tabs {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+        .nav-tabs > li > a {
+            background: #DADADA;
+            border-radius: 0;
+            box-shadow: inset 0 -8px 7px -9px rgba(0,0,0,.4),-2px -2px 5px -2px rgba(0,0,0,.4);
+        }
+
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:hover {
+            background: #fff;
+            box-shadow: inset 0 0 0 0 rgba(0,0,0,.4),-2px -3px 5px -2px rgba(0,0,0,.4);
+        }
+
+    /* Tab Content */
+    .tab-pane {
+        background: #fff;
+        box-shadow: 0 0 4px rgba(0,0,0,.4);
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    /*  responsive facebook comment box*/
+    .fb_iframe_widget,
+    .fb_iframe_widget span,
+    .fb_iframe_widget span iframe[style] {
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+
+
+    .scroll-img {
+        border-left: 1px solid #DADADA;
+        overflow: hidden;
+    }
+
+        .scroll-img ul {
+            height: 800px;
+            margin: 0;
+        }
+
+            .scroll-img ul li {
+                display: block;
+            }
+</style>
+
+@section scripts{
+<script src="/Content/js/jquery-1.10.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/Content/js/jquery-ui.js"></script>
+<script src="/Content/js/jquery.scrollbox.js"></script>
+
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+<script>
+    $(function () {
+        $('#demo5').scrollbox({
+            linear: false,  // Scroll method
+            startDelay: 2,  // Start delay (in seconds)
+            delay: 3,   // Delay after each scroll event (in seconds)
+            step: 5,// Distance of each single step (in pixels)
+            speed: 32,  // Delay after each single step (in milliseconds)
+            switchItems: 1, // Items to switch after each scroll event
+            direction: 'vertical',
+            distance: 'auto',
+            autoPlay: true,
+            onMouseOverPause: true,
+            paused: false,
+            queue: null
+        });
+        $('#demo5-backward').click(function () {
+            $('#demo5').trigger('backward');
+        });
+        $('#demo5-forward').click(function () {
+            $('#demo5').trigger('forward');
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $(".add-to-cart").click(function () {
+            pid = $(this).attr("data-id");
+            $.ajax({
+                url: "/Cart/Add",
+                data: { id: pid },
+                success: function (response) {
+                    $("#nn-cart-count").html(response.Count);
+                    $("#nn-cart-total").html(response.Total);
+                }
+            });
+
+            // hieu ung bay vao gio
+            //cssfly = ".fly-effect {background:url(?);background-size:100% 100%;}";
+            //src = $("#i" + pid).attr("src");
+            //newcssfly = cssfly.replace("?", src);
+            //$("#cart-fly").html(newcssfly);
+
+            //options = { to: "#nn-cart-image", className: "fly-effect" };
+            //$("#i" + pid).effect("transfer", options, 500, function () { });
+        });
+    });
+</script>
+
+}

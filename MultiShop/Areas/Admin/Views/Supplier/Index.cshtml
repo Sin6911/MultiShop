@@ -1,0 +1,128 @@
+﻿@model Supplier
+@{
+    ViewBag.Title = "Quản lý nhà cung cấp";
+}
+
+<h2>Quản lý nhà cung cấp</h2>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#edit-tab" role="tab" data-toggle="tab">Edit</a></li>
+    <li><a href="#list-tab" role="tab" data-toggle="tab">List</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="edit-tab">
+        @using (Html.BeginForm("Index", "Supplier",
+            FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Id, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.Id, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Phone, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Logo, new { @class = "col-md-4 control-label" })
+                <div class="col-md-8">
+                    @Html.HiddenFor(m => m.Logo, new { @class = "form-control" })
+                    <input name="uplLogo" type="file" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-4 col-md-8">
+                    <button onclick="form.action = '/Admin/Supplier/Insert'" class="btn btn-default">Insert</button>
+                    <button onclick="form.action = '/Admin/Supplier/Update'" class="btn btn-default">Update</button>
+                    <button onclick="form.action = '/Admin/Supplier/Delete'" class="btn btn-default">Delete</button>
+                    <button onclick="form.action = '/Admin/Supplier/Index'" class="btn btn-default">Reset</button>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="tab-pane" id="list-tab">
+        <table class="table table-bordered">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Logo</th>
+                <th></th>
+                <th></th>
+            </tr>
+            @foreach (Supplier c in ViewBag.Suppliers)
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.Name</td>
+                    <td>@c.Email</td>
+                    <td>@c.Phone</td>
+                    <td>
+                        <img class="img-responsive" src="/images/suppliers/@c.Logo" />
+                    </td>
+                    <td>
+                        <a href="/Admin/Supplier/Delete/@c.Id">
+                            <img src="~/images/icons/Task%20list.png" />
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/Admin/Supplier/Edit/@c.Id">
+                            <img src="~/images/icons/Edit.png" />
+                        </a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(function () {
+            $(":file").change(function () {
+                $.ajax({
+                    url: '/Supplier/Upload',
+                    data: new FormData($("form:eq(0)").get(0)),
+                    contentType: false,
+                    processData: false,
+                    type: "POST",
+                    success: function (response) {
+                        $("#Logo").val(response);
+                    }
+                });
+            });
+        })
+    </script>
+}

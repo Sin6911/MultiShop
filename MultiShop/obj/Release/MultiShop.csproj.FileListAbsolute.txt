@@ -1,0 +1,260 @@
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\MultiShop.dll.config
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\MultiShop.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\MultiShop.pdb
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Antlr3.Runtime.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\EntityFramework.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\EntityFramework.SqlServer.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Newtonsoft.Json.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Owin.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Net.Http.Formatting.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Helpers.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Http.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Http.WebHost.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Mvc.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Optimization.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Razor.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.WebPages.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.WebPages.Razor.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\WebGrease.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Helpers.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Mvc.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Optimization.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Razor.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.WebPages.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.WebPages.Razor.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Newtonsoft.Json.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Antlr3.Runtime.pdb
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Net.Http.Formatting.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Http.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\System.Web.Http.WebHost.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\EntityFramework.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\EntityFramework.SqlServer.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\obj\Release\MultiShop.dll
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\obj\Release\MultiShop.pdb
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\obj\Release\MultiShop.csprojResolveAssemblyReference.cache
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\obj\Release\MultiShop.Migrations.InitialCreate.resources
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\obj\Release\MultiShop.csproj.GenerateResource.Cache
+C:\Users\vanka\Documents\Visual Studio 2013\Projects\MultiShop\MultiShop\obj\Release\MultiShop.Migrations.van.resources
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\MultiShop.dll.config
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\MultiShop.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\MultiShop.pdb
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Antlr3.Runtime.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\EntityFramework.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\EntityFramework.SqlServer.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Google.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Web.Infrastructure.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Newtonsoft.Json.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Owin.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Net.Http.Formatting.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Helpers.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Http.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Http.WebHost.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Mvc.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Optimization.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Razor.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.WebPages.Deployment.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.WebPages.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.WebPages.Razor.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\WebGrease.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Helpers.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Mvc.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Optimization.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Razor.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.WebPages.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.WebPages.Deployment.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.WebPages.Razor.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Newtonsoft.Json.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Antlr3.Runtime.pdb
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Net.Http.Formatting.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Http.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\System.Web.Http.WebHost.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\EntityFramework.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\EntityFramework.SqlServer.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Google.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\obj\Release\MultiShop.csprojResolveAssemblyReference.cache
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\obj\Release\MultiShop.Migrations.InitialCreate.resources
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\obj\Release\MultiShop.Migrations.van.resources
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\obj\Release\MultiShop.csproj.GenerateResource.Cache
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\obj\Release\MultiShop.dll
+D:\Asp.net\[Sharecode.vn] Code website ban hang multishop asp.net mvc5\MultiShop\MultiShop\obj\Release\MultiShop.pdb
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\MultiShop.dll.config
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\MultiShop.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\MultiShop.pdb
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Antlr3.Runtime.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\EntityFramework.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\EntityFramework.SqlServer.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Google.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Web.Infrastructure.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Newtonsoft.Json.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Owin.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Net.Http.Formatting.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Helpers.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Http.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Http.WebHost.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Mvc.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Optimization.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Razor.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.WebPages.Deployment.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.WebPages.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.WebPages.Razor.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\WebGrease.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Helpers.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Mvc.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Optimization.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Razor.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.WebPages.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.WebPages.Deployment.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.WebPages.Razor.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Newtonsoft.Json.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Antlr3.Runtime.pdb
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Net.Http.Formatting.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Http.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\System.Web.Http.WebHost.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\EntityFramework.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\EntityFramework.SqlServer.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Google.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Dowload\Shop_Source\MultiShop\MultiShop\obj\Release\MultiShop.csproj.AssemblyReference.cache
+E:\Dowload\Shop_Source\MultiShop\MultiShop\obj\Release\MultiShop.Migrations.InitialCreate.resources
+E:\Dowload\Shop_Source\MultiShop\MultiShop\obj\Release\MultiShop.Migrations.van.resources
+E:\Dowload\Shop_Source\MultiShop\MultiShop\obj\Release\MultiShop.csproj.GenerateResource.cache
+E:\Dowload\Shop_Source\MultiShop\MultiShop\obj\Release\MultiShop.csproj.CoreCompileInputs.cache
+E:\Dowload\Shop_Source\MultiShop\MultiShop\obj\Release\MultiShop.csproj.CopyComplete
+E:\Dowload\Shop_Source\MultiShop\MultiShop\obj\Release\MultiShop.dll
+E:\Dowload\Shop_Source\MultiShop\MultiShop\obj\Release\MultiShop.pdb
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\MultiShop.dll.config
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\MultiShop.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\MultiShop.pdb
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Antlr3.Runtime.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\EntityFramework.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\EntityFramework.SqlServer.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Cookies.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Facebook.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Google.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.OAuth.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Twitter.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Web.Infrastructure.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Newtonsoft.Json.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Owin.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Net.Http.Formatting.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Helpers.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Http.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Http.WebHost.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Mvc.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Optimization.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Razor.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.WebPages.Deployment.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.WebPages.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.WebPages.Razor.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\WebGrease.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Helpers.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Mvc.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Optimization.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Razor.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.WebPages.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.WebPages.Deployment.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.WebPages.Razor.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Newtonsoft.Json.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Antlr3.Runtime.pdb
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Net.Http.Formatting.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Http.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\System.Web.Http.WebHost.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\EntityFramework.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\EntityFramework.SqlServer.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Facebook.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Cookies.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.OAuth.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Google.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.Twitter.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\obj\Release\MultiShop.csproj.AssemblyReference.cache
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\obj\Release\MultiShop.Migrations.InitialCreate.resources
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\obj\Release\MultiShop.Migrations.van.resources
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\obj\Release\MultiShop.csproj.GenerateResource.cache
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\obj\Release\MultiShop.csproj.CoreCompileInputs.cache
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\obj\Release\MultiShop.csproj.CopyComplete
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\obj\Release\MultiShop.dll
+D:\CANHAN\Lập trình web\MultiShop\MultiShop\obj\Release\MultiShop.pdb

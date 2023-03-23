@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Category>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="nn-home-banner">
+    <img src="/Content/img/banner/home-banner03.jpg" class="img-responsive" />
+</div><!--end home banner-->
+@foreach(var c in Model) 
+{
+    var items=c.Products
+        .OrderBy(p=>Guid.NewGuid())
+        .ToList()
+        .Take(4);
+<div class="nn-block-margin-top30px">
+    <div class="nn-cat-title">
+        
+        <a href="/Product/Category?CategoryID=@c.Id"><h2>@c.Name</h2></a>
+            
+    </div>
+    <div>
+        @foreach(var p in items)
+        {
+            <div class="col-md-3 col-sm-6 col-sx-12">
+                <div class="nn-product-box">
+                    
+                    <a href="/chi-tiet/@p.Name.ToAscii().ToLower()_@p.Id">
+                        <img id="i@(p.Id)" class="img-responsive" alt="@p.Name" src="/Content/img/products/@p.Image" />
+                    </a>
+                    <div class="nn-product-box-descriptions">
+                        <h3 class="nn-product-box-name">
+                            <a href="/chi-tiet/@p.Name.ToAscii().ToLower()_@p.Id" title="@p.Name">@p.Name</a>
+                        </h3>
+                        <div class="nn-product-box-price ">
+                            <span class="">@p.UnitPrice</span>
+                        </div>
+                        <div class="nn-product-box-actions">
+                            <button type="button" title="Add to Cart" class="btn btn-default add-to-cart" data-id="@p.Id">
+                                <span>Add to Cart</span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <div><a class="pull-right alert-link" href="/Product/Category?CategoryID=@c.Id"><h6>View More...</h6></a></div>
+    </div>
+    
+</div>
+    <div class="clearfix"></div>
+   
+}
+
+
+
+@section scripts{
+    <script>
+        $(function () {
+            $(".add-to-cart").click(function () {
+                pid = $(this).attr("data-id");
+                $.ajax({
+                    url: "/Cart/Add",
+                    data: { id: pid },
+                    success: function (response) {
+                        $("#nn-cart-count").html(response.Count);
+                        $("#nn-cart-total").html(response.Total);
+                    }
+                });
+
+                // hieu ung bay vao gio
+                cssfly = ".fly-effect {background:url(?);background-size:100% 100%;}";
+                src = $("#i" + pid).attr("src");
+                newcssfly = cssfly.replace("?", src);
+                $("#cart-fly").html(newcssfly);
+
+                options = { to: "#nn-cart-image", className: "fly-effect" };
+                $("#i" + pid).effect("transfer", options, 500, function () { });
+            });
+        });
+    </script>
+}

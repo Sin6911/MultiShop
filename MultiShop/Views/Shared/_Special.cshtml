@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Product>
+<div class="nn-block">
+    <div class="nn-megamenu-sidebar-title"><i class="glyphicon glyphicon-tags"></i><h2>Best sellers</h2></div>
+    <div class="nn-block-product">
+        <ul>
+            @foreach(var p in Model)
+            {
+           
+            <li>
+                <div class="nn-block-product-sidebar">
+                    <div class="nn-block-product-sidebar-img col-md-5">
+                        <a href="/chi-tiet/@p.Name.ToAscii().ToLower()_@p.Id">
+                            <img class="img-responsive" src="/Content/img/products/@p.Image" />
+                        </a>
+                    </div>
+                    <div class="nn-block-product-sidebar-details col-md-7">
+                        <h3 class="nn-block-product-sidebar-name">
+                            <a href="/chi-tiet/@p.Name.ToAscii().ToLower()_@p.Id" title="@p.Name">@p.Name</a>
+                        </h3>
+                        <div class="nn-block-product-sidebar-price ">
+                            <span class="">@p.UnitPrice</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+             }
+        </ul>
+    </div>
+</div><!--end block best seller-->

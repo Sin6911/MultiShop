@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ReportInfo>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Revenue</h2>
+
+@using (Html.BeginForm()){
+    <fieldset>
+        <legend>Thời gian</legend>
+        From: @Html.TextBox("Min")
+        To: @Html.TextBox("Max")
+        <input type="submit" value="View" />
+    </fieldset>
+}
+<hr />
+
+<table class="table table-bordered">
+    <tr>
+        <th>Group</th>
+        <th>Count</th>
+        <th>Sum</th>
+        <th>Min Price</th>
+        <th>Max Price</th>
+        <th>Avg Price</th>
+    </tr>
+    @foreach (var r in Model)
+    {
+        <tr>
+            <td>@r.Group @if(r.iGroup != 0){@r.iGroup}</td>
+            <td>@r.Count</td>
+            <td>@Html.FormatValue(r.Sum, "{0:c}")</td>
+            <td>@Html.FormatValue(r.Min, "{0:c}")</td>
+            <td>@Html.FormatValue(r.Max, "{0:c}")</td>
+            <td>@Html.FormatValue(r.Avg, "{0:c}")</td>
+        </tr>
+    }
+</table>
+
+<hr />
+
+<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+
+@section scripts{
+    <script>
+        $(function () {
+            $("fieldset #Min, fieldset #Max").datepicker({
+                dateFormat: 'yy-mm-dd'
+            });
+        });
+    </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("visualization", "1", { packages: ["corechart"] });
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Loai', 'Doanh so'],
+          @foreach (var r in Model)
+          {
+              <text>["@r.Group", @r.Sum],</text>
+          }
+            ]);
+
+        var options = {
+            title: 'Doanh so ban hang',
+            is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+    }
+    </script>
+
+}
